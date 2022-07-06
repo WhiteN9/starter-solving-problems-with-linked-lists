@@ -40,7 +40,7 @@ function reverseIterative(list) {
 function reverseRecursive(list) {
   //base case
   if (list.length <= 1) {
-    return list;
+    return list; //return a linkedlist with the its last node
   }
   //recursive case
   const head = list.head.value;
@@ -53,7 +53,7 @@ function reverseRecursive(list) {
 
   return reversedList;
 }
-const expected = new LinkedList([5, 4, 3, 2, 1]);
-const actual = reverseRecursive(expected);
+// const expected = new LinkedList([5, 4, 3, 2, 1]);
+// const actual = reverseRecursive(expected);
 
 module.exports = { reverseIterative, reverseRecursive };
